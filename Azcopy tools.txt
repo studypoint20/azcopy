@@ -1,0 +1,17 @@
+Command name "Stoage account/Container?SAS token details
+
+To create Container
+
+azcopy make "https://teeststoragac.blob.core.windows.net/temp?sv=2020-08-04&ss=b&srt=sco&sp=rwdlaci&se=2022-05-01T17:50:08Z&st=2022-05-01T09:50:08Z&spr=https&sig=BbNMqQXA5cc78jLP%2FsVF6g5tG236rN7EGUjsAgRnWj0%3D"
+
+To Upload a file
+
+azcopy copy Capture.JPG "https://teeststoragac.blob.core.windows.net/tmp/Capture.JPG?sv=2020-08-04&ss=b&srt=sco&sp=rwdlaci&se=2022-05-01T17:50:08Z&st=2022-05-01T09:50:08Z&spr=https&sig=BbNMqQXA5cc78jLP%2FsVF6g5tG236rN7EGUjsAgRnWj0%3D"
+
+To Upload a Dir file in Container
+
+azcopy copy "newdir/*"  "https://teeststoragac.blob.core.windows.net/temp?sv=2020-08-04&ss=b&srt=sco&sp=rwdlaci&se=2022-05-01T17:50:08Z&st=2022-05-01T09:50:08Z&spr=https&sig=BbNMqQXA5cc78jLP%2FsVF6g5tG236rN7EGUjsAgRnWj0%3D"
+
+To upload a Dir file in New dir on Container
+
+azcopy copy "newdir/*"  "https://teeststoragac.blob.core.windows.net/temp/study?sv=2020-08-04&ss=b&srt=sco&sp=rwdlaci&se=2022-05-01T17:50:08Z&st=2022-05-01T09:50:08Z&spr=https&sig=BbNMqQXA5cc78jLP%2FsVF6g5tG236rN7EGUjsAgRnWj0%3D"
